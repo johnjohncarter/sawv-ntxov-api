@@ -7,14 +7,12 @@ let database_name = process.env.DB_DATABASE;
 
 module.exports = {
     connection: function () {
-        // mongoose.connect(
-        //     database_conection + '://'
-        //     + database_host + ':'
-        //     + database_port + '/'
-        //     + database_name
-        // );
-        // mongoose.connect('mongodb://localhost:27017/sawv-ntxov');
-        mongoose.connect('mongodb://root:root123456@ds261626.mlab.com:61626/sawv-ntxov');
+        mongoose.connect(
+            database_conection + '://'
+            + database_host + ':'
+            + database_port + '/'
+            + database_name
+        );
 
         let database = mongoose.connection;
 
