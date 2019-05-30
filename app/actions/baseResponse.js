@@ -1,4 +1,5 @@
 module.exports = {
+
     success: function(data) {
         if (data.constructor === String) {
             return {
@@ -13,6 +14,7 @@ module.exports = {
             data: data
         };
     },
+
     error: function (message) {
         if (message.constructor === String) {
             return {
@@ -27,4 +29,5 @@ module.exports = {
             error: message
         };
     }
+
 };

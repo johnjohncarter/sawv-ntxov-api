@@ -18,6 +18,7 @@
     "mocha": "^5.2.0",
     "mongoose": "^5.3.14",
     "morgan": "~1.9.0",
+    "multer": "^1.4.1",
     "password-hash": "^1.2.2",
     "pug": "2.0.0-beta11",
     "supertest": "^3.3.0"
