@@ -5,7 +5,7 @@ module.exports = {
             return {
                 success: true,
                 data: {
-                    message : data
+                    message: data
                 }
             };
         }
@@ -20,7 +20,7 @@ module.exports = {
             return {
                 success: false,
                 error: {
-                    message : message
+                    message: message
                 }
             };
         }

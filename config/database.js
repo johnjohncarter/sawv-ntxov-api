@@ -25,7 +25,7 @@ module.exports = {
         });
 
         database.on('error', function (err) {
-            console.log('error', err)
+            console.log('error => ', err)
         });
     }
 };

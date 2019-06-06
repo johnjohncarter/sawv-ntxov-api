@@ -8,15 +8,15 @@ exports.index = function (req, res, next) {
             callback(null, './public/uploads');
         },
         filename: (req, file, callback) => {
-            callback(null, Date.now()+'-'+file.originalname)
+            callback(null, Date.now() + '-' + file.originalname)
         }
     });
 
     let upload = multer({storage: storage}).single('photo');
-    upload(req, res, function(err) {
+    upload(req, res, function (err) {
         if(err) {
-            console.log('Error Occured');
+            return res.json(responses.error('create upload image fail!!'), 401);
         }
-        return res.json(responses.success('create upload image successfully'), 200);
+        return res.json(responses.success('create upload image successfully!!'), 200);
     });
 };
