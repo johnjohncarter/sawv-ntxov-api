@@ -1,20 +1,19 @@
 const mongoose = require('mongoose');
 
 // User Schema
-const AdminSchema = mongoose.Schema({
-    email:{
+const FullSetSchema = mongoose.Schema({
+    name_th:{
         type: String,
         required: true
     },
-    username:{
+    name_en:{
         type: String,
         required: true
     },
-    password:{
+    category_id:{
         type: String,
         required: true,
-        select: false,
-    },
+    }
 });
 
-const Admin = module.exports = mongoose.model('admins', AdminSchema);
+const FullSet = module.exports = mongoose.model('full_set', FullSetSchema);
