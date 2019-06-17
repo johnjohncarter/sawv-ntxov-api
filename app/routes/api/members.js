@@ -1,4 +1,4 @@
-let userAction = require("../../actions/user/userAction");
+let userAction = require("../../actions/users/userAction");
 let adminAction = require("../../actions/admin/adminAction");
 let signInAction = require("../../actions/authenticate/signIn");
 
