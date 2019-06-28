@@ -25,6 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.post('/webhook', (req, res) => res.sendStatus(200));
 app.use('/', indexRouter);
 app.use('/api', apiRouter);
 app.use('/line', lineRouter);
